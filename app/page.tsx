@@ -1,22 +1,34 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-[#FAFAFA] font-sans">
-      <div className="mb-8">
-        <Image
-          src="/images/logo.png"
-          alt="AllRecon"
-          width={500}
-          height={500}
-          priority
-        />
-      </div>
-      <div className="rounded-lg border-2 border-[#233764] bg-[#FAFAFA] p-8 shadow-lg">
-        <p className="text-center text-lg font-medium text-[#233764]">
-          Landpage em desenvolvimento - Em breve mais informações.
+    <div className="py-10 space-y-24">
+      <section id="inicio" className="min-h-[60vh]">
+        <h1 className="text-4xl font-semibold tracking-tight text-slate-900">
+          AllRecon
+        </h1>
+        <p className="mt-4 max-w-2xl text-slate-700">
+          Landing page para apresentar visão, dor, produto e roadmap.
         </p>
-      </div>
+      </section>
+
+      <section id="dor" className="min-h-[40vh]">
+        <h2 className="text-2xl font-semibold text-slate-900">A dor</h2>
+      </section>
+
+      <section id="produto" className="min-h-[40vh]">
+        <h2 className="text-2xl font-semibold text-slate-900">Produto</h2>
+      </section>
+
+      <section id="historia" className="min-h-[40vh]">
+        <h2 className="text-2xl font-semibold text-slate-900">História</h2>
+      </section>
+
+      <section id="roadmap" className="min-h-[40vh]">
+        <h2 className="text-2xl font-semibold text-slate-900">Roadmap</h2>
+      </section>
+
+      <section id="contato" className="min-h-[40vh]">
+        <h2 className="text-2xl font-semibold text-slate-900">Contato</h2>
+      </section>
     </div>
   );
 }
